@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import LazyHero from 'react-lazy-hero';
-import AnimationSequencer from './AnimationSequencer';
+import CssAnimateSequencer from './cssAnimateSequencer';
 
 const img1 = require('./markus-spiske-507983-unsplash.jpg');
 const img2 = require('./andrew-preble-199410-unsplash.jpg');
@@ -11,7 +11,8 @@ class App extends Component {
     return (
       <div>
         <LazyHero parallaxOffset={550} imageSrc={img2} opacity={0} minHeight={'100vh'}>
-          <AnimationSequencer string={'Christopher Caldwell'} duration={2000} animation={'bounceInDown'} />
+          <CssAnimateSequencer string={'Christopher Caldwell'} duration={750} animation={'zoomInLeft'} />
+
         </LazyHero>
 
         <section class="content-section bg-light" id="about">
@@ -31,7 +32,7 @@ class App extends Component {
         </section>
 
         <LazyHero minHeight={'20vh'} parallaxOffset={550} opacity={0} imageSrc={img1}>
-          <h1>Generic Startup Hype Headline</h1>
+          <CssAnimateSequencer string={'Generic Startup Headline'} duration={750} animation={'zoomIn'} />
         </LazyHero>
 
 
