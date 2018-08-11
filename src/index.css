@@ -18,3 +18,8 @@ body {
 .hero{
   color: white;
 }
+
+.skills{
+  /* background-image: radial-gradient(white, black); */
+  padding: 5% 0;
+}
