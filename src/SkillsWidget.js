@@ -82,7 +82,6 @@ class SkillsWidget extends Component{
     }
 
     drawChart(){
-        // this.state.dataSet === 4 ? <HorizontalBar redraw={true} data={graphsDataList[this.state.dataSet]}/> : 
         if (this.state.dataSet === 3 ) {
             return <HorizontalBar redraw={true} data={graphsDataList[this.state.dataSet]} options={barOptions} />
         } else {

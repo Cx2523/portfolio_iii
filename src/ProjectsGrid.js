@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-
+import PictureCube from './pictureCube';
 class ProjectsGrid extends Component{
     constructor(){
         super();
@@ -11,7 +11,9 @@ class ProjectsGrid extends Component{
             <Container style={{width: '70%', marginLeft:'auto', marginRigh:'auto'}}>
                 <Row>
                     <Col style={{backgroundColor: 'black', height: '350px'}}></Col>
-                    <Col></Col>
+                    <Col>
+                        <PictureCube size={300}/>
+                    </Col>
                 </Row>
                 <Row>
                     <Col></Col>
