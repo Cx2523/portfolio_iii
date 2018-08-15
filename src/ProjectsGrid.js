@@ -12,7 +12,7 @@ class ProjectsGrid extends Component{
                 <Row>
                     <Col style={{backgroundColor: 'black', height: '350px'}}></Col>
                     <Col>
-                        <PictureCube size={300}/>
+                        <PictureCube depth={350}/>
                     </Col>
                 </Row>
                 <Row>
